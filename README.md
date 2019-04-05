@@ -30,13 +30,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The .forEach method doesn't actually return anything (undefined). It simply calls a provided function on each element in your array. The difference is that .map utilizes return values and actually returns a new Array of the same size.
+
 2. What is the difference between a function and a method?
+
+A function has another property: all calls to a function with the same parameters, should return the same result. A method, on the other hand, is a function that is related to an object in an object-oriented language.
+
+Function are self contained program they have return some values and the functions are defined in structured languages. Functions are called independently.
+
+While methods are those do not have independent existence they are always defined with in class. Methods are called using instance or object. And are used to manipulate instance variable of a class.
 
 3. What is closure?
 
+A closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time. To use a closure, define a function inside another function and expose it.
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1 - When in the global scope, the value of “this” will be the window/console Object;
+
+Rule 2 - Whenever a function is called by a preceding dot, the object before that dot is this.
+
+Rule 3 - Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+
+Rule 4 - Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+It calls the constructor of the Parent Class. Can be used as a Function or an Object.
 
 ## Project Set up
 
@@ -65,11 +85,11 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
+Test your knowledge of objects and arrays.
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
+This challenge takes a look at callbacks and closures as well as scope.
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
